@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "SamTest",
+  "title": "Testing schematics",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Smart component name",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "page": {
+      "type": "string",
+      "description": "The page that smart component goes to",
+      "default": "shared/components"
+    },
+    "project": {
+      "type": "string",
+      "description": "The name of the project.",
+      "$default": {
+        "$source": "projectName"
+      }
+    },
+    "inlineTemplate": {
+      "description": "Specifies if the template will be in the ts file.",
+      "type": "boolean",
+      "default": false,
+      "alias": "t"
+    },
+    "path": {
+      "type": "string",
+      "format": "path",
+      "description": "path to create the enum",
+      "visible": false
+    },
+    "spec": {
+      "type": "boolean",
+      "description": "Specifies if a spec file is generated",
+      "default": false
+    },
+    "selector": {
+      "type": "string",
+      "format": "html-selector",
+      "description": "The selector to use for the component."
+    }
+  },
+  "required": ["page"]
+}

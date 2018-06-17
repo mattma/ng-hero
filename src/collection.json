@@ -1,0 +1,27 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "hero": {
+      "description": "A blank schematic.",
+      "factory": "./hero/index#hero"
+    },
+    "smart": {
+      "alias": ["sm"],
+      "description": "Generate a smart component",
+      "factory": "./smart/index",
+      "schema": "./smart/schema.json"
+    },
+    "workspace": {
+      "factory": "./workspace",
+      "schema": "./workspace/schema.json",
+      "description": "Create an Angular workspace for local testing.",
+      "hidden": true
+    },
+    "application": {
+      "aliases": [ "app" ],
+      "factory": "./application",
+      "schema": "./application/schema.json",
+      "description": "Create an Angular like application for local testing."
+    }
+  }
+}

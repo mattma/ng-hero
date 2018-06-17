@@ -1,0 +1,29 @@
+{
+  "name": "hero",
+  "version": "0.0.0",
+  "description": "A blank schematics",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rimraf node_modules npm-debug.log && npm run clean:source",
+    "clean:source": "rimraf dist src/**/*.js src/**/*.js.map src/**/*.d.ts",
+    "test": "npm run build && jasmine src/**/*_spec.js"
+  },
+  "keywords": [
+    "schematics"
+  ],
+  "author": "",
+  "license": "MIT",
+  "schematics": "./src/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "^0.7.0-rc.0",
+    "@angular-devkit/schematics": "^0.7.0-rc.0",
+    "@types/jasmine": "^2.6.0",
+    "@types/node": "^8.0.31",
+    "jasmine": "^2.8.0",
+    "typescript": "^2.8.3"
+  },
+  "devDependencies": {
+    "json-schema-to-typescript": "^5.5.0",
+    "rimraf": "^2.6.2"
+  }
+}
