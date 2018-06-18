@@ -1,7 +1,7 @@
 {
-  "name": "hero",
-  "version": "0.0.0",
-  "description": "A blank schematics",
+  "name": "@hero/schematics",
+  "version": "0.1.0",
+  "description": "Angular schematics",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "clean": "rimraf node_modules npm-debug.log && npm run clean:source",
