@@ -1,5 +1,5 @@
 {
-  "name": "@hero/schematics",
+  "name": "@rockon/schematics",
   "version": "0.1.0",
   "description": "Angular schematics",
   "scripts": {
