@@ -11,6 +11,17 @@ Check the documentation with
 schematics --help
 ```
 
+### Use in Angular CLI application
+
+```bash
+npm link
+
+# In Angular CLI app
+npm link @soup/schematics
+
+ng g @soup/schematics:smart component-name --page page-name
+```
+
 ### Unit Testing
 
 `npm run test` will run the unit tests, using Jasmine as a runner and test framework.
@@ -25,4 +36,3 @@ npm publish
 ```
 
 That's it!
- 

@@ -1,5 +1,5 @@
 {
-  "name": "hero",
+  "name": "@soup/schematics",
   "version": "0.1.0",
   "description": "Angular schematics",
   "scripts": {
