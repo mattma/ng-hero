@@ -41,6 +41,11 @@
       "description": "Specifies if a spec file is generated",
       "default": false
     },
+    "isSmart": {
+      "type": "boolean",
+      "description": "Specifies if it is smart or dumb component",
+      "default": true
+    },
     "selector": {
       "type": "string",
       "format": "html-selector",

@@ -29,6 +29,10 @@ export interface Schema {
    */
   spec?: boolean;
   /**
+   * Specifies if it is smart or dumb component
+   */
+  isSmart?: boolean;
+  /**
    * The selector to use for the component.
    */
   selector?: string;
