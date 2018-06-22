@@ -5,11 +5,11 @@
       "description": "A blank schematic.",
       "factory": "./hero/index#hero"
     },
-    "smart": {
-      "alias": [ "sm" ],
-      "description": "Generate a smart component",
-      "factory": "./smart/index",
-      "schema": "./smart/schema.json"
+    "component": {
+      "alias": [ "comp" ],
+      "description": "Generate a smart or dumb component",
+      "factory": "./component/index",
+      "schema": "./component/schema.json"
     },
     "workspace": {
       "factory": "./workspace",

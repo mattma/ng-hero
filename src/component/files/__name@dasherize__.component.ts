@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
-import { Store } from '@ngrx/store';
-import { Observable } from 'rxjs';
-import { AppState } from '@hero/common';
+import { Component<% if(!isSmart) { %>, ChangeDetectionStrategy <% } %>} from '@angular/core';<% if(isSmart) { %>
+import { Store } from '@ngrx/store';<% } %>
+import { Observable } from 'rxjs';<% if(isSmart) { %>
+import { AppState } from '@hero/common';<% } %>
 
 // import { get<%= classify(name) %> } from './shared/store/';
 // import { <%= classify(name) %> } from './shared/<%= dasherize(name) %>.model';
 
 @Component({
-  selector: '<%= selector %>',<% if(inlineTemplate) { %>
+  selector: '<%= selector %>',<% if(!isSmart) { %>
+  changeDetection: ChangeDetectionStrategy.OnPush,<% } %><% if(inlineTemplate) { %>
   template: `
     <h2>
       <%= dasherize(name) %> works!
