@@ -8,7 +8,7 @@
     "clean:modules": "rimraf node_modules npm-debug.log",
     "clean:source": "rimraf dist src/**/*.js src/**/*.js.map src/**/*.d.ts",
     "test": "npm run build && jasmine src/**/*_spec.js",
-    "publish": "npm run build && npm publish --access public"
+    "prepublish": "npm run build"
   },
   "keywords": [
     "schematics"
