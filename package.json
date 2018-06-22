@@ -6,20 +6,21 @@
     "build": "tsc -p tsconfig.json",
     "clean": "rimraf node_modules npm-debug.log && npm run clean:source",
     "clean:source": "rimraf dist src/**/*.js src/**/*.js.map src/**/*.d.ts",
-    "test": "npm run build && jasmine src/**/*_spec.js"
+    "test": "npm run build && jasmine src/**/*_spec.js",
+    "publish": "npm run build && npm publish --access public"
   },
   "keywords": [
     "schematics"
   ],
-  "author": "",
+  "author": "mattma",
   "license": "MIT",
   "schematics": "./src/collection.json",
   "dependencies": {
-    "@angular-devkit/core": "^0.7.0-rc.0",
-    "@angular-devkit/schematics": "^0.7.0-rc.0",
+    "@angular-devkit/core": "^0.6.8",
+    "@angular-devkit/schematics": "^0.6.8",
     "@types/jasmine": "^2.6.0",
-    "@types/node": "^8.0.31",
-    "jasmine": "^2.8.0",
+    "@types/node": "^10.3.4",
+    "jasmine": "^2.99.0",
     "typescript": "^2.8.3"
   },
   "devDependencies": {

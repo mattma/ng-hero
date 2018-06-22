@@ -6,7 +6,7 @@
       "factory": "./hero/index#hero"
     },
     "smart": {
-      "alias": ["sm"],
+      "alias": [ "sm" ],
       "description": "Generate a smart component",
       "factory": "./smart/index",
       "schema": "./smart/schema.json"
